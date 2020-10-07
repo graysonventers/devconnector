@@ -1,0 +1,6 @@
+{
+    "mongoURI": "mongodb+srv://grayson123:grayson123@devconnector.du6pd.mongodb.net/DevConnector?retryWrites=true&w=majority",
+    "jwtSecret": "mysecrettoken",
+    "githubClientId": "3d801c8ab46f0ee38b02",
+    "githubSecret": "a28f83608d6bd6fb0f9475bcccde8464a3dbbc26"
+}
