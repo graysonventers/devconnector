@@ -46,6 +46,9 @@ router.get('/', auth, async (req, res) => {
         res.json(posts);
     } catch (err) {
         console.error(err.message);
+        if (err.name === 'CastError'){
+            return res.status(400).json({msg: 'Profile not found'});
+        }
         res.status(500).send('Server Error');
     }
 });
