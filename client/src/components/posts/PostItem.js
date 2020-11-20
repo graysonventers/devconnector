@@ -1,4 +1,4 @@
-import React, { Fragment, useEffect } from 'react';
+import React, { Fragment } from 'react';
 import PropTypes from 'prop-types';
 import { Link } from 'react-router-dom';
 import Moment from 'react-moment';
@@ -6,11 +6,6 @@ import { connect } from 'react-redux';
 import { addLike, deletePost, removeLike } from '../../actions/post';
 
 const PostItem = ({ addLike, removeLike, deletePost, auth, post: { _id, text, name, avatar, user, likes, comments, date }, showActions }) => {
-    useEffect(() => {
-        addLike();
-        removeLike();
-        deletePost();
-    }, [addLike, removeLike, deletePost]);
 
     return (
         <div className="post bg-white p-1 my-1">
